@@ -8,9 +8,13 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* Browser Router defines the router */}
     <BrowserRouter>
+      {/* And here are the routes */}
       <Routes>
+        {/* The route path "/", which calls <App /> and contains the navbar, has nested routes for the other elements in the spa */}
         <Route path="/" element={<App />}>
+          {/* And here are the nested elements */}
           <Route index element={<Home />}/>
           <Route path="projects" element={<Projects />}/>
           <Route path="connect" element={<Connect />}/>
