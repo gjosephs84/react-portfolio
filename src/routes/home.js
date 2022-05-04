@@ -1,7 +1,15 @@
 import React from 'react';
+// import components
+import Card from '../components/card';
+
+// import images
+import headShot from '../images/headshot.jpg';
+import trioO from '../images/trio-o.jpg';
+import pacmen from '../images/pacmen.jpg';
 
 function Home() {
     return (
+        <main className="content">
         <div className="centered">
              <h1>Gregory Josephs: Full Stack Developer In Training</h1>
              <div class="centered">
@@ -24,7 +32,47 @@ function Home() {
 
             <p>Find me on <a href="https://github.com/gjosephs84" target="_blank">GitHub</a>, <a href="https://linkedin.com/in/gjosephs" target="_blank">LinkedIn</a>, <a href="https://twitter.com/gjosephs" target="_blank">Twitter</a>, or reach me via email at <a href="mailto:greg.josephs@gmail.com">greg.josephs@gmail.com</a></p>
           </div>
+          <div className="centered">
+            <img className="max100" src={headShot}/>
+          </div>
+          <div className="centered">
+            <h1>Most Recent Projects</h1>
+          </div>
         </div>
+        <Card 
+            width="18rem"
+            image={trioO}
+            title="Word Game"
+            cardText="It's not Wordle, but ... It kind of is? Here is my for-educational-purposes-only clone of the popular word game that's taken the world by storm. This version was created by me from the ground up while learning React."
+            dpLink="https://gjosephs84.github.io/trio-o"
+            dpText="Play it Now!"
+            ghLink="https://github.com/gjosephs84/trio-o"
+            ghText="View the Repo!"
+          
+          />
+        <Card 
+            width="18rem"
+            image={trioO}
+            title="Trio-O"
+            cardText="My take on a classic tic-tac-toe style board game, with a twist! Dom elements are draggable! Can you go three in a row?"
+            dpLink="https://gjosephs84.github.io/trio-o"
+            dpText="Play it Now!"
+            ghLink="https://github.com/gjosephs84/trio-o"
+            ghText="View the Repo!"
+          
+          />
+          <Card 
+            width="18rem"
+            image={pacmen}
+            title="PacMen Factory"
+            cardText="An exercise to illustrate edge detection and dynamically adding elements to the DOM. Create some PacMen and watch them chomp and bounce!"
+            dpLink="https://gjosephs84.github.io/pacmen_exercise"
+            dpText="See it in Action!"
+            ghLink="https://github.com/gjosephs84/pacmen_exercise"
+            ghText="View the Repo!"
+          
+          />
+        </main>
     )
 }
 
