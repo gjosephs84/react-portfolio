@@ -15,6 +15,39 @@ div {
   justify-self: center;
 }
 
+.card-button {
+  width: 16rem;
+  height: 2rem;
+  background-color: #BD4F6C;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 3px;
+}
+
+.card-button:hover  {
+  background-color: #66999B;
+}
+.visited {
+  background-color: #FBD87F;
+}
+.btn-custom {
+    background-color: #BD4F6C;
+    border-color: #BD4F6C;
+    background: #BD4F6C;
+}
+.btn-custom:hover {
+    background-color: #FBD87F;
+    border-color: #FBD87F;
+}
+.btn-custom:visited {
+    background-color: #814857;
+    background: #BD4F6C
+}
+
+
+
 h1 {
   color: #BD4F6C;
   font-family: 'Alegreya Sans', sans-serif;
@@ -39,14 +72,17 @@ a {
 
 a:hover {
   color: #66999B;
+  text-decoration: none;
 }
 
 a:visited {
   color: #D7816A;
+  text-decoration: none;
 }
 
 a:visited:hover {
   color: #66999B;
+  text-decoration: none;
 }
 
 .the-nav-bar {
@@ -100,17 +136,6 @@ a:visited:hover {
   .full-width-text {
       padding-left: 20px;
       grid-column-end: span 2;
-  }
-  .btn-primary {
-      background-color: #BD4F6C;
-      border-color: #BD4F6C;
-  }
-  .btn-primary:hover {
-      background-color: #FBD87F;
-      border-color: #FBD87F;
-  }
-  .btn-primary:visited {
-      color: white;
   }
   
   .card {

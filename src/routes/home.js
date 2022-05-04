@@ -1,6 +1,7 @@
 import React from 'react';
 // import components
 import Card from '../components/card';
+import CardButton from '../components/cardButton';
 
 // import images
 import headShot from '../images/headshot.jpg';
@@ -48,7 +49,6 @@ function Home() {
             dpText="Play it Now!"
             ghLink="https://github.com/gjosephs84/trio-o"
             ghText="View the Repo!"
-          
           />
         <Card 
             width="18rem"

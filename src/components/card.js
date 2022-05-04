@@ -1,5 +1,5 @@
 import React from 'react';
-
+import CardButton from './cardButton';
 function Card ({width, image, title, cardText, dpLink, dpText, ghLink, ghText}) {
     let cardWidth
     console.log(width);
@@ -23,9 +23,15 @@ function Card ({width, image, title, cardText, dpLink, dpText, ghLink, ghText}) 
                 <h5 className="card-title">{title}</h5>
                 <p className="card-text">{cardText}</p>
                 <br/>
-                <a href={dpLink} className="btn btn-primary">{dpText}</a>
+                <CardButton 
+                initialText={"Here's a test!"}
+                visitedText={"Still working!"}
+                link={"https://www.google.com"}
+              
+              />
+                <a href={dpLink} className="btn btn-custom">{dpText}</a>
                 <br/>
-                <a href={ghLink} className="btn btn-primary" target="_blank">{ghText}</a>
+                <a href={ghLink} className="btn btn-custom" target="_blank">{ghText}</a>
             </div>
         </div>
     );
