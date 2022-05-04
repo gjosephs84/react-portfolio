@@ -28,9 +28,11 @@ div {
 
 .card-button:hover  {
   background-color: #66999B;
+  color: white;
 }
 .visited {
   background-color: #FBD87F;
+  color:#814857
 }
 .btn-custom {
     background-color: #BD4F6C;
