@@ -5,6 +5,7 @@ import CardButton from '../components/cardButton';
 
 // import images
 import headShot from '../images/headshot.jpg';
+import wordgame from '../images/word-game.jpg';
 import trioO from '../images/trio-o.jpg';
 import pacmen from '../images/pacmen.jpg';
 
@@ -42,23 +43,21 @@ function Home() {
         </div>
         <Card 
             width="18rem"
-            image={trioO}
+            image={wordgame}
             title="Word Game"
             cardText="It's not Wordle, but ... It kind of is? Here is my for-educational-purposes-only clone of the popular word game that's taken the world by storm. This version was created by me from the ground up while learning React."
-            dpLink="https://gjosephs84.github.io/trio-o"
-            dpText="Play it Now!"
-            ghLink="https://github.com/gjosephs84/trio-o"
-            ghText="View the Repo!"
+            textInitial={["Play it Now!", "View the Repo!"]}
+            textVisited={["Guess Another Word!", "See the Source Code Again!"]}
+            link={["https://gjosephs84.github.io/word-game/", "https://github.com/gjosephs84/word-game"]}
           />
         <Card 
             width="18rem"
             image={trioO}
             title="Trio-O"
             cardText="My take on a classic tic-tac-toe style board game, with a twist! Dom elements are draggable! Can you go three in a row?"
-            dpLink="https://gjosephs84.github.io/trio-o"
-            dpText="Play it Now!"
-            ghLink="https://github.com/gjosephs84/trio-o"
-            ghText="View the Repo!"
+            textInitial={["Try it Out!", "View the Repo!"]}
+            textVisited={["Play Another Round!", "See the Source Code Again!"]}
+            link={["https://gjosephs84.github.io/trio-o","https://github.com/gjosephs84/trio-o"]}
           
           />
           <Card 
@@ -66,10 +65,9 @@ function Home() {
             image={pacmen}
             title="PacMen Factory"
             cardText="An exercise to illustrate edge detection and dynamically adding elements to the DOM. Create some PacMen and watch them chomp and bounce!"
-            dpLink="https://gjosephs84.github.io/pacmen_exercise"
-            dpText="See it in Action!"
-            ghLink="https://github.com/gjosephs84/pacmen_exercise"
-            ghText="View the Repo!"
+            textInitial={["See it in Action!", "View the Repo!"]}
+            textVisited={["Take Another Look", "See the Source Code Again!"]}
+            link={["https://gjosephs84.github.io/pacmen_exercise/","https://github.com/gjosephs84/pacmen_exercise"]}
           
           />
         </main>

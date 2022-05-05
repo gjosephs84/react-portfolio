@@ -1,15 +1,7 @@
 import React from 'react';
 import CardButton from './cardButton';
-function Card ({width, image, title, cardText, dpLink, dpText, ghLink, ghText}) {
+function Card ({width, image, title, cardText, link, textInitial, textVisited}) {
     let cardWidth
-    console.log(width);
-    console.log(image);
-    console.log(title);
-    console.log(cardText);
-    console.log(dpLink);
-    console.log(dpText);
-    console.log(ghLink);
-    console.log(ghText);
     if (!width) {
         cardWidth = "18rem;"
     } else {
@@ -23,15 +15,16 @@ function Card ({width, image, title, cardText, dpLink, dpText, ghLink, ghText}) 
                 <h5 className="card-title">{title}</h5>
                 <p className="card-text">{cardText}</p>
                 <br/>
-                <CardButton 
-                initialText={"Here's a test!"}
-                visitedText={"Still working!"}
-                link={"https://www.google.com"}
-              
-              />
-                <a href={dpLink} className="btn btn-custom">{dpText}</a>
-                <br/>
-                <a href={ghLink} className="btn btn-custom" target="_blank">{ghText}</a>
+                {link.map((link, index) => {
+                    return (
+                    <CardButton
+                        key={index}
+                        initialText={textInitial[index]}
+                        visitedText={textVisited[index]}
+                        link={link}
+                    />)
+                })}
+               
             </div>
         </div>
     );

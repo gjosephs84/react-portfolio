@@ -24,6 +24,7 @@ div {
   text-align: center;
   font-weight: lighter;
   padding-top: 3px;
+  margin-top: 10px;
 }
 
 .card-button:hover  {
